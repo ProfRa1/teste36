@@ -1,0 +1,139 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin-left: 30px;
+}
+
+p,
+h2 {
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.logo {
+    padding: 10px;
+    background-color: white;
+    width: 700px;
+}
+
+.menu {
+    margin-right: 10px;
+    background-color: #0000FE;
+    padding: 30px;
+    width: 900px;
+}
+
+.menu a {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.site-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+}
+
+.capa {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    margin-left: 30px;
+}
+
+/* Estilos dos itens com texto sobreposto */
+.item {
+    position: relative;
+    margin: 10px;
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    resize: both;
+    transition: opacity 0.3s ease;
+}
+
+.item:hover p {
+    opacity: 1;
+}
+
+.item img {
+    border-radius: 10px;
+}
+
+.item:hover img {
+    opacity: 0.33;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0000FE;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-color: #0000FE;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-rede-social {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.icone-rede-social img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
